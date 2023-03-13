@@ -397,7 +397,7 @@ footer .copyright{
     background-color: var(--primary-color);
     margin: auto;
     margin-top: 10%;
-    max-width: 360px;
+    max-width: 500px;
     padding: 45px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
