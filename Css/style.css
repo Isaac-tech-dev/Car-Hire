@@ -1,0 +1,445 @@
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 20px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.25s;
+    border-radius: 10px;
+}
+button.transparent{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 20px;
+    color: var(--black-color);
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.35s;
+    border-radius: 10px;
+}
+button.green{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 20px;
+    color: var(--black-color);
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    transition: 0.35s;
+    border-radius: 10px;
+}
+
+/*===== VARIABLE CSS =====*/
+:root{
+     /*===== Colors  =====*/
+     --primary-color: #00800D;
+     --black-color: #000;
+     --white-color: #fff;
+}
+body{
+    width: 100%;
+}
+
+/*===== Header Start =====*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background-color: #f7f7f7;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.logo{
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: var(--primary-color);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: '';
+    width: 30px;
+    height: 2.5px;
+    background-color: #00800D;
+    position: absolute;
+    bottom: -4px;
+    left: 15px;
+}
+#mobile{
+    display: none;
+}
+#close{
+    display: none;
+}
+/*===== Header Stop =====*/
+
+
+/*===== Hero Start =====*/
+#hero{
+    background-image: url(/assets/Volkswagen.jpg);
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 25% right 0;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.hero{
+    background-color: #f7f7f7;
+    padding: 20px 100px 20px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+.hero h2{
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.hero h4{
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+button{
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+.btn:hover{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+.hidden2{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+/*===== Hero Stop =====*/
+
+/*===== How it works Start =====*/
+#works{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#works .work-container{
+    cursor: pointer;
+    width: 190px;
+    text-align: center;
+    padding: 25px 15px;
+    background-color: #00800D;
+    border: 1px solid #838383;
+    border-radius: 10px;
+}
+#works .work-container:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#works .work-container img{
+    margin-bottom: 10px;
+
+}
+#works .work-container h6{
+    color: var(--white-color);
+    line-height: 1;
+}
+/*===== How it works Stop =====*/
+
+/*===== Top Deals Start =====*/
+#top-deals{
+    text-align: center;
+}
+#top-deals p{
+    color: #585858;
+}
+#top-deals .deal-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#top-deals .product{
+    width: 23%;
+    min-width: 250px;
+    height: 20%;
+    padding: 10px 12px;
+    border: 1px solid #C8C5C5;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 20px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#top-deals .product:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#top-deals .product img{
+    width: 100%;
+    border-radius: 20px;
+}
+#top-deals .product .description{
+    text-align: start;
+    padding: 10px 0;
+}
+#top-deals .product .description span{
+    color: var(--primary-color);
+    font-size: 12px;
+}
+#top-deals .product .description h5{
+    padding-top: 7px;
+    font-size: 14px;
+    color: #606063;
+}
+#top-deals .product .description i{
+    font-size: 12px;
+    color: gold;
+}
+#top-deals .product .description h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+/*===== Top Deals Stop =====*/
+
+/*===== About Us Start =====*/
+#about{
+    text-align: center;
+}
+#about div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin-bottom: 10px;
+}
+#about div p{
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    text-align: justify;
+}
+#about div button{
+    height: 50px;
+    transition: 0.3s ease-in-out;
+}
+#about div button:hover{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+#about div img{
+    background-size: contain;
+    width: 100%;
+    height: 90vh;
+    border-radius: 10px;
+}
+/*===== About Us Stop =====*/
+
+/*===== Team Start =====*/
+#team{
+    text-align: center;
+    margin-bottom: 200px;
+}
+#team h2{
+    text-decoration: underline;
+}
+#team div{
+    background-color: #585858;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+}
+#team div .team{
+    display: block;
+}
+#team div .team img{
+    margin-top: 70px;
+    width: 50%;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#team div .team h5{
+    color: var(--white-color);
+    font-size: 15px;
+    font-weight: 300;
+}
+#team div .team h3{
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 700;
+}
+/*===== Team Stop =====*/
+
+/*===== Footer Start =====*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer h4{
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+footer a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 20px;
+    transition: 0.2s ease-in-out;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    color: #222;
+    font-size: 20px;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .follow i:hover,
+footer a:hover{
+    color: var(--primary-color);
+}
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+/*===== Footer Stop =====*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===== Media Query =====*/
+@media (max-width: 799px) {
+    .section-p1{
+        padding: 40px 40px;
+    }
+
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #929292;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.02);
+        padding: 80px 0 0 10px;
+        transition: 0.5s ;
+    }
+    #navbar .active{
+        right: 0;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: flex;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+    #hero{
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+}
