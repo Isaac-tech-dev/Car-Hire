@@ -42,3 +42,9 @@ const observer1 = new IntersectionObserver((entries) => {
 
 const hiddenElements1 =document.querySelectorAll('.app-hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+// mobile = document.querySelectorAll(".mobile");
+// mobile.onClick = function(){
+//     navBar = document.getElementById('navbar');
+//     navBar.classList.toggle("active");
+// }
